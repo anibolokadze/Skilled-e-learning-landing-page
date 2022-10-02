@@ -165,7 +165,7 @@ footer button:hover{
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 740px) {
     .card-container{
         grid-template-columns: repeat(2, 1fr); 
         gap: 56px 10px;
@@ -185,10 +185,7 @@ footer button:hover{
 
     .image-tablet{
         background:url(/assets/image-hero-tablet@2x.png);
-        position: absolute;
-        right: 50px;
-        width: 50%;
-        height: 70vh;
+        display:block;
     }
 
     .intro-card p{
@@ -207,11 +204,7 @@ footer button:hover{
     nav{
         margin: 2rem 10.3125rem 0 10.3125rem;
     }
-    .head-container 
-    
-    /* > :not(.image-hero) */
-    
-    {
+    .head-container {
         margin: 0 10.3125rem 0 10.3125rem;
     }
     main{
