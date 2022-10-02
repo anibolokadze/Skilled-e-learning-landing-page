@@ -47,7 +47,7 @@ nav button{
 }
 
 /* header text*/
-.head-container > :not(.image-hero){
+.head-container > :not(.image-mobile,.image-tablet,.image-desktop){
     margin: 2.375rem 1rem 1rem 1rem;
 }
 .head-container h1{
@@ -65,7 +65,7 @@ nav button{
 }
 
 
-.image-hero{
+.image-mobile{
     background-image: url(assets/image-hero-mobile@2x.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -74,7 +74,6 @@ nav button{
     width: 100%;
     margin: auto;
     padding-bottom: 66px;
-    
 }
 
 
@@ -174,12 +173,24 @@ footer button:hover{
     nav{
         margin: 2rem 2.4375rem 6.5625rem 2rem;
     }
-    .head-container > :not(.image-hero){
+    .head-container{
         margin: 0 2rem 0 2rem;
     }
     main{
         margin: 0rem 2.4375rem 0 2.4375rem;
     }
+    .image-mobile{
+        display: none;
+    }
+
+    .image-tablet{
+        background:url(/assets/image-hero-tablet@2x.png);
+        position: absolute;
+        right: 50px;
+        width: 50%;
+        height: 70vh;
+    }
+
     .intro-card p{
         padding-top: 56px;
     }
@@ -196,7 +207,11 @@ footer button:hover{
     nav{
         margin: 2rem 10.3125rem 0 10.3125rem;
     }
-    .head-container > :not(.image-hero){
+    .head-container 
+    
+    /* > :not(.image-hero) */
+    
+    {
         margin: 0 10.3125rem 0 10.3125rem;
     }
     main{
