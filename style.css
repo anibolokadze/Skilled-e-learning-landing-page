@@ -11,11 +11,23 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    /* background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%); */
+    background:linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%); ;
 }
 body > :not(footer){
     margin: 1rem;
 }
+
+/* general styles */
+.btn{
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 28px;
+    width: 140px;
+    height: 48px;
+}
+
+
 
 /* navigation */
 nav{
@@ -29,12 +41,8 @@ nav a{
     line-height: 35px;
     color: #13183F;
 }
-.nav-btn{
-    width: 140px;
-    height: 48px;
-    border-radius: 28px;
+nav button{
     background: #13183F;
-    color: white;
 }
 
 /* header */
@@ -50,11 +58,8 @@ nav a{
 }
 .head-container button{
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-    border-radius: 31.5px;
     width: 167px;
     height: 56px;
-    border: none;
-    color: white;
 }
 .image-hero-wrapper img{
     width: 100%;
@@ -84,17 +89,54 @@ nav a{
 .card-element{
     background: #FFFFFF;
     max-width: 343px;
-   height: 259px;
-    background-color: #F02AA6;
+    padding: 0 30px 30px 30px;
+    border-radius: 10px;
 }
 .card-element p{
     max-width: 286px;
+    padding-bottom: 16px;
 }
 .card-element img{
     position: relative;
     top: -23px;
     display: block;
     width: 56px;
+}
+
+.card-element h2{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #13183F;
+    padding-bottom: 16px;
+}
+.card-element a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
 
 }
 /* mediati gasasworebelia gridebis nawili*/
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem 0 1rem;
+    height: 120px;
+    background: #13183F;
+    color: white;
+    margin-top: 80px;
+}
+footer button{
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    line-height: 28px;
+}
+footer p{
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+}
