@@ -11,9 +11,12 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    padding: 16px 16px 0 16px;
-    color: #83869A;
+    /* background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%); */
 }
+body > :not(footer){
+    margin: 1rem;
+}
+
 /* navigation */
 nav{
     display: flex;
@@ -61,20 +64,37 @@ nav a{
 
 
 /* main content body */
-.body-container{
+.card-container{
     display: grid;
-    grid-template-columns: auto  ;
     row-gap: 40px;
 }
-.colored-container{
+.intro-card{
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     border-radius: 10px;
     height: 120px;
     max-width: 343px;
+
 }
-.colored-container p{
+.intro-card p{
     font-weight: 800;
     font-size: 24px;
     color: #FFFFFF;
     padding: 30px 30px;
 }
+.card-element{
+    background: #FFFFFF;
+    max-width: 343px;
+   height: 259px;
+    background-color: #F02AA6;
+}
+.card-element p{
+    max-width: 286px;
+}
+.card-element img{
+    position: relative;
+    top: -23px;
+    display: block;
+    width: 56px;
+
+}
+/* mediati gasasworebelia gridebis nawili*/
