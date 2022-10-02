@@ -40,6 +40,7 @@ nav{
 }
 nav a{
     font-size: 28px;
+    cursor: pointer;
 }
 nav button{
     background: #13183F;
@@ -88,7 +89,6 @@ main{
 .intro-card{
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     border-radius: 10px;
-    height: 120px;
 }
 .intro-card p{
     font-size: 24px;
@@ -121,6 +121,7 @@ main{
     font-weight: 700;
     font-size: 18px;
     color: #F74780;
+    padding-top: 24px;
 
 }
 /* mediati gasasworebelia gridebis nawili*/
@@ -143,6 +144,7 @@ footer button{
 footer p{
     color: white !important;
     font-size: 28px;
+    cursor: pointer;
 }
 
 
@@ -158,4 +160,51 @@ nav button:hover{
 footer button:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
     cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .card-container{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 56px 10px;
+    }
+    nav{
+        margin: 2rem 2.4375rem 6.5625rem 2rem;
+    }
+    .head-container > :not(.image-hero){
+        margin: 0 2rem 0 2rem;
+    }
+    main{
+        margin: 0rem 2.4375rem 0 2.4375rem;
+    }
+    .intro-card{
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        padding: 0rem 2.4375rem 0 2.4375rem;
+    }
+}
+
+@media (min-width:1440px) {
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+    nav{
+        margin: 2rem 10.3125rem 0 10.3125rem;
+    }
+    .head-container > :not(.image-hero){
+        margin: 0 10.3125rem 0 10.3125rem;
+    }
+    main{
+        margin: 0rem 10.3125rem 0 10.3125rem;
+    }
+    .intro-card{
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        padding: 0rem 10.3125rem 0 10.3125rem;
+    }
 }
