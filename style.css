@@ -157,6 +157,9 @@ nav button:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     cursor: pointer;
 }
+.card-element a:hover{
+    color: #FFA7C3;
+}
 footer button:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
     cursor: pointer;
@@ -177,9 +180,8 @@ footer button:hover{
     main{
         margin: 0rem 2.4375rem 0 2.4375rem;
     }
-    .intro-card{
-        display: flex;
-        justify-content: center;
+    .intro-card p{
+        padding-top: 56px;
     }
     footer{
         padding: 0rem 2.4375rem 0 2.4375rem;
@@ -189,7 +191,7 @@ footer button:hover{
 @media (min-width:1440px) {
     .card-container{
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
+        gap: 80px 30px;
     }
     nav{
         margin: 2rem 10.3125rem 0 10.3125rem;
@@ -200,9 +202,8 @@ footer button:hover{
     main{
         margin: 0rem 10.3125rem 0 10.3125rem;
     }
-    .intro-card{
-        display: flex;
-        justify-content: center;
+    .intro-card p{
+        padding-top: 64px;
     }
     footer{
         padding: 0rem 10.3125rem 0 10.3125rem;
