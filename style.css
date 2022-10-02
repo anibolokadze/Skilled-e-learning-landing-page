@@ -47,12 +47,12 @@ nav button{
 
 /* header text*/
 .head-container > :not(.image-hero){
-    margin: 1rem;
+    margin: 2.375rem 1rem 1rem 1rem;
 }
 .head-container h1{
     font-size: 40px;
     line-height: 50px;
-    padding: 38px 0 26px 0;
+    padding-bottom: 26px;
 }
 .head-container p{
     padding-bottom: 24px;
@@ -77,7 +77,7 @@ nav button{
 }
 
 
-/* main content body */
+/* cards */
 main{
     margin: 1rem 1rem 0 1rem;
 }
@@ -97,6 +97,8 @@ main{
     color: #FFFFFF;
     padding: 30px 30px;
 }
+
+
 .card-element{
     background: #FFFFFF;
     max-width: 343px;
@@ -144,4 +146,19 @@ footer button{
 footer p{
     color: white !important;
     font-size: 28px;
+}
+
+
+/* hover */
+nav button:hover{
+    background: #666CA3;
+    cursor: pointer;
+}
+.head-container button:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    cursor: pointer;
+}
+footer button:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    cursor: pointer;
 }
