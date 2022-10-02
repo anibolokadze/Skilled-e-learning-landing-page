@@ -13,6 +13,7 @@ body{
     line-height: 26px;
     color: #83869A;
     background:linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%); ;
+    
 }
 
 /* general styles */
@@ -32,11 +33,15 @@ body{
 
 
 /* navigation */
+body > :not(footer){
+    margin: 0 1rem;
+}
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem 1rem 0 1rem;
+    margin-top: 1rem !important;
+    margin-bottom: 2.375rem !important;
 }
 nav a{
     font-size: 28px;
@@ -47,9 +52,7 @@ nav button{
 }
 
 /* header text*/
-.head-container > :not(.image-mobile,.image-tablet,.image-desktop){
-    margin: 2.375rem 1rem 1rem 1rem;
-}
+
 .head-container h1{
     font-size: 40px;
     line-height: 50px;
@@ -78,9 +81,6 @@ nav button{
 
 
 /* cards */
-main{
-    margin: 1rem 1rem 0 1rem;
-}
 .card-container{
     display: grid;
     row-gap: 40px;
@@ -97,7 +97,7 @@ main{
 
 
 .card-element{
-    background: #FFFFFF;
+    background: white;
     padding: 0 30px 30px 30px;
     border-radius: 10px;
 }
@@ -166,26 +166,26 @@ footer button:hover{
 
 
 @media (min-width: 740px) {
+    body > :not(footer){
+        margin: 0 2.5rem;
+    }
     .card-container{
         grid-template-columns: repeat(2, 1fr); 
         gap: 56px 10px;
-    }
-    nav{
-        margin: 2rem 2.4375rem 6.5625rem 2rem;
-    }
-    .head-container{
-        margin: 0 2rem 0 2rem;
-    }
-    main{
-        margin: 0rem 2.4375rem 0 2.4375rem;
     }
     .image-mobile{
         display: none;
     }
 
+    .head-container button{
+        margin-bottom: 186px;
+    }
+    .head-container p{
+        max-width: 398px;
+    }
     .image-tablet{
-        background:url(/assets/image-hero-tablet@2x.png);
-        display:block;
+        /* background:url(/assets/image-hero-tablet@2x.png);
+        display:block; */
     }
 
     .intro-card p{
@@ -196,12 +196,12 @@ footer button:hover{
     }
 }
 
-@media (min-width:1440px) {
+@media (min-width:1200px) {
     .card-container{
         grid-template-columns: repeat(3, 1fr);
         gap: 80px 30px;
     }
-    nav{
+    /* nav{
         margin: 2rem 10.3125rem 0 10.3125rem;
     }
     .head-container {
@@ -215,5 +215,5 @@ footer button:hover{
     }
     footer{
         padding: 0rem 10.3125rem 0 10.3125rem;
-    }
+    } */
 }
