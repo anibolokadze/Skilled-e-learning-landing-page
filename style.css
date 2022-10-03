@@ -49,6 +49,8 @@ nav a{
 }
 nav button{
     background: #13183F;
+    z-index: 3;
+
 }
 
 
@@ -200,32 +202,22 @@ footer button:hover{
     }
 
     /* background image */
-    .image-mobile{
+     .image-mobile{
         display: none;
     }
     .image-tablet{
         display: block;
         background:url(/assets/image-hero-tablet.png);
-        /* height: 70vh;
-        position: absolute;
-        width: 50%;
-        background-repeat: no-repeat;
-        top: 0;
-        right: 0; */
-
-
-
 
         position: absolute;
         top: 0;
         right: 0;
         width: 50%;
-        height: 690px;
+        height: 100vh;
         background-repeat: no-repeat;
         background-position: bottom left;
-        z-index: 0;
-    }
 
+    } 
 
 
 
@@ -239,16 +231,16 @@ footer button:hover{
     }
 }
 
-
-
 @media (min-width:1000px) {
-    .image-desktop{
-        width: 100%;
+    .image-tablet{
+        height: 85vh;
+        width: 50%;
     }
 }
 
+
 /* desktop */
-@media (min-width:1430px) {
+@media (min-width:1300px) {
     .card-container{
         grid-template-columns: repeat(3, 1fr);
         gap: 80px 30px;
@@ -258,12 +250,23 @@ footer button:hover{
     }
 
 
-
+    .image-tablet{
+        display: none;
+    }
 
 
     /* background image */
     .image-desktop{
-        /* background:url(/assets/image-hero-desktop.png) */
+        display: block;
+        background:url(/assets/image-hero-desktop.png);
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: bottom left;
     }
 
 
