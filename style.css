@@ -15,6 +15,9 @@ body{
     background:linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%); ;
     
 }
+body > :not(footer){
+    margin: 0 1rem;
+}
 
 /* general styles */
 .btn{
@@ -33,9 +36,6 @@ body{
 
 
 /* navigation */
-body > :not(footer){
-    margin: 0 1rem;
-}
 nav{
     display: flex;
     align-items: center;
@@ -51,8 +51,8 @@ nav button{
     background: #13183F;
 }
 
-/* header text*/
 
+/* header text*/
 .head-container h1{
     font-size: 40px;
     line-height: 50px;
@@ -67,7 +67,7 @@ nav button{
     height: 56px;
 }
 
-
+/* mobile background image */
 .image-mobile{
     background-image: url(assets/image-hero-mobile@2x.webp);
     background-repeat: no-repeat;
@@ -78,6 +78,7 @@ nav button{
     margin: auto;
     padding-bottom: 66px;
 }
+
 
 
 /* cards */
@@ -105,6 +106,7 @@ nav button{
     max-width: 286px;
     padding-bottom: 16px;
 }
+
 .card-element img{
     position: relative;
     top: -23px;
@@ -123,7 +125,7 @@ nav button{
     padding-top: 24px;
 
 }
-/* mediati gasasworebelia gridebis nawili*/
+
 
 
 /* footer */
@@ -147,6 +149,7 @@ footer p{
 }
 
 
+
 /* hover */
 nav button:hover{
     background: #666CA3;
@@ -165,6 +168,7 @@ footer button:hover{
 }
 
 
+/* tablet */
 @media (min-width: 786px) {
     body > :not(footer){
         margin: 0 40px;
@@ -173,19 +177,22 @@ footer button:hover{
         grid-template-columns: repeat(2, 1fr); 
         gap: 56px 10px;
     }
-    .image-mobile{
-        display: none;
-    }
-
     .head-container button{
         margin-bottom: 186px;
     }
     .head-container p{
         max-width: 398px;
     }
+
+
+    /* background image */
+    .image-mobile{
+        display: none;
+    }
     .image-tablet{
         background:url(assets/image-hero-tablet.png);
     }
+
 
 
     .intro-card p{
@@ -196,6 +203,8 @@ footer button:hover{
     }
 }
 
+
+/* desktop */
 @media (min-width:1440px) {
     .card-container{
         grid-template-columns: repeat(3, 1fr);
@@ -204,6 +213,15 @@ footer button:hover{
     body > :not(footer){
         margin:0 165px 0 165px;
     }
+
+    
+    /* background image */
+    .image-desktop{
+        /* background:url(/assets/image-hero-desktop.png) */
+    }
+
+
+
     footer{
         padding: 0 165px 0 165px;
     }
