@@ -173,9 +173,15 @@ footer button:hover{
     body > :not(footer){
         margin: 0 40px;
     }
+        main{
+        margin-top: 100px !important;
+    }
     .card-container{
         grid-template-columns: repeat(2, 1fr); 
         gap: 56px 10px;
+    }
+    .head-container{
+        padding-top: 105px;
     }
     .head-container button{
         margin-bottom: 186px;
@@ -183,7 +189,9 @@ footer button:hover{
     .head-container p{
         max-width: 398px;
     }
-
+    .head-container h1{
+        max-width: 326px;
+    }
 
     /* background image */
     .image-mobile{
@@ -205,7 +213,7 @@ footer button:hover{
 
 
 /* desktop */
-@media (min-width:1440px) {
+@media (min-width:1430px) {
     .card-container{
         grid-template-columns: repeat(3, 1fr);
         gap: 80px 30px;
@@ -214,7 +222,7 @@ footer button:hover{
         margin:0 165px 0 165px;
     }
 
-    
+
     /* background image */
     .image-desktop{
         /* background:url(/assets/image-hero-desktop.png) */
