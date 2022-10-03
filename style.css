@@ -207,7 +207,7 @@ footer button:hover{
     }
     .image-tablet{
         display: block;
-        background:url(/assets/image-hero-tablet.png);
+        background:url(assets/image-hero-tablet.png);
 
         position: absolute;
         top: 0;
@@ -258,7 +258,7 @@ footer button:hover{
     /* background image */
     .image-desktop{
         display: block;
-        background:url(/assets/image-hero-desktop.png);
+        background:url(assets/image-hero-desktop.png);
 
         position: absolute;
         top: 0;
