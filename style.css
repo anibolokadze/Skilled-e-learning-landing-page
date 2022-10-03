@@ -79,7 +79,10 @@ nav button{
     padding-bottom: 66px;
 }
 
+.image-tablet{
+    display: none;
 
+}
 
 /* cards */
 .card-container{
@@ -173,8 +176,11 @@ footer button:hover{
     body > :not(footer){
         margin: 0 40px;
     }
-        main{
+    main{
         margin-top: 100px !important;
+    }
+    nav{
+        z-index: 1;
     }
     .card-container{
         grid-template-columns: repeat(2, 1fr); 
@@ -198,8 +204,30 @@ footer button:hover{
         display: none;
     }
     .image-tablet{
-        background:url(assets/image-hero-tablet.png);
+        display: block;
+        background:url(/assets/image-hero-tablet.png);
+        /* height: 70vh;
+        position: absolute;
+        width: 50%;
+        background-repeat: no-repeat;
+        top: 0;
+        right: 0; */
+
+
+
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 690px;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        z-index: 0;
     }
+
+
+
 
 
 
@@ -212,6 +240,13 @@ footer button:hover{
 }
 
 
+
+@media (min-width:1000px) {
+    .image-desktop{
+        width: 100%;
+    }
+}
+
 /* desktop */
 @media (min-width:1430px) {
     .card-container{
@@ -223,10 +258,17 @@ footer button:hover{
     }
 
 
+
+
+
     /* background image */
     .image-desktop{
         /* background:url(/assets/image-hero-desktop.png) */
     }
+
+
+
+
 
 
 
