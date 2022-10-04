@@ -27,4 +27,4 @@ The designs were created to the following widths:
 
 Since this is my first big project I found it challenging at first how to layout the page. 
 
-I had an opportunity to understand how to use CSS Grid Layout Module alongside Flexbox. 🚀
+I had an opportunity to understand how to use CSS Grid Layout Module alongside with Flexbox. 🚀
