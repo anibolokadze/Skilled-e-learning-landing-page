@@ -9,6 +9,12 @@ Live Site URL : https://anibolokadze.github.io/Skilled-e-learning-landing-page/
 
 The challenge is to create full website markup for desktop, tablet and mobile. 
 
+The designs were created to the following widths:
+
+- Mobile
+- Tablet
+- Desktop
+
 # Built with
 - Semantic HTML5 markup
 - CSS custom properties
