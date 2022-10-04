@@ -8,3 +8,14 @@ This is solution to <a href="https://www.frontendmentor.io/challenges/skilled-el
 # The challenge
 
 The challenge is to create full website markup for desktop, tablet and mobile. 
+
+# Built with
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Grid
+- positions
+- Mobile-first workflow
+
+# What I learned
+
