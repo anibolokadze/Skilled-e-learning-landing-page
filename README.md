@@ -11,9 +11,9 @@ The challenge is to create full website markup for desktop, tablet and mobile.
 
 The designs were created to the following widths:
 
-- Mobile
-- Tablet
-- Desktop
+- Mobile: 375px
+- Tablet: 786px
+- Desktop: 1300px
 
 # Built with
 - Semantic HTML5 markup
